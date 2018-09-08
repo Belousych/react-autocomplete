@@ -1,33 +1,9 @@
 {
-  "parser": "babel-eslint",
-  "extends": "airbnb",
-  "plugins": ["lodash"],
-  "env": {
-    "browser": true,
-    "jest": true
-  },
+  "extends": [
+    "plugin:react-app/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
   "rules": {
-    "semi": ["error", "never"],
-    "eqeqeq": ["error", "allow-null"],
-    "no-param-reassign": ["warn", { "props": true }],
-    "no-underscore-dangle": ["off"],
-    "arrow-body-style": ["warn", "as-needed"],
-    "newline-per-chained-call": ["error", { ignoreChainWithDepth: 4 }],
-    "react/jsx-no-bind": ["warn", {
-      "ignoreRefs": true,
-      "allowArrowFunctions": true,
-      "allowBind": false,
-    }],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/prop-types": ["warn", { "ignore": [], "customValidators": [] }],
-    "lodash/import-scope":["error", "method"]
-  },
-  "globals": {
-    "__": true,
-    "__ENVIRONMENT__": true,
-    "__DEVELOPMENT__": true,
-    "__PRODUCTION__": true,
-    "__DEBUG__": true,
-    "__TEST__": true
+    "react-app/react/react-in-jsx-scope": ["warn"]
   }
 }

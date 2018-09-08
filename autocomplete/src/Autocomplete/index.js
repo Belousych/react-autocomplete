@@ -10,7 +10,6 @@ class Autocomplete extends React.Component {
 
     const total = this.props.list.length
     const placeholder = total > 50 ? this.props.placeholder : this.props.placeholderSelect
-
     const select = total > 50 ? false : true
 
     this.state={
